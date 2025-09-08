@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherAlert India - Weather</title>
+    <link rel="stylesheet" href="./weather.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="../creator/oooo.jpg" alt="Creator Photo" class="logo-img">
+            <span class="logo-text">🌦 Weather Alert System</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="../home/home.html">Home</a></li>
+            <li><a href="./weather.html" class="active">Weather</a></li>
+            <li><a href="../about/about.html">About</a></li>
+            <li><a href="../creator/creator.html">Creator</a> </li>
+        </ul>
+    </nav>
+
+
+    <header class="header">
+        <h1>Weather Details</h1>
+        <p>Check live weather conditions and 5-day forecast for your city</p>
+        <div class="search-bar">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button id="searchBtn">Search</button>
+        </div>
+    </header>
+
+
+    <section>
+        <div id="alertBox" class="alert-box">
+            Enter a city to see weather alerts.
+        </div>
+    </section>
+
+
+    <section class="current-weather">
+        <div class="weather-card">
+            <h2 id="cityName">City</h2>
+            <p id="temperature">-- °C</p>
+            <p id="condition">--</p>
+            <p id="humidity">💧 Humidity: --%</p>
+            <p id="wind">🌬 Wind: -- km/h</p>
+            <p id="pressure">📊 Pressure: -- hPa</p>
+        </div>
+    </section>
+
+
+    <section class="forecast">
+        <h2>Next 5 Days Forecast</h2>
+        <div class="forecast-cards" id="forecast"></div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 WeatherAlert System. Built By Kaif.</p>
+    </footer>
+
+
+    <script src="./weather.js"></script>
+</body>
+
+</html>
